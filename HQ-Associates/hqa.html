@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="HQA Favicon.png" type="image/x-icon">
+    <title>HQ-Associates</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="hqaJS.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            background-color: #f8f8f8; /* Light gray background for the header */
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 1vh 20%;
+            height: 20vh;
+            transition: height 0.3s, padding 0.3s; /* Smooth transition for the height and padding changes */
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure the header is on top of other content */
+        }
+
+            header.shrink {
+                height: 10vh; /* Adjust the height for the shrinking effect */
+                padding: 1vh 20%; /* Adjust the padding for the shrinking effect */
+            }
+
+            header img {
+                max-height: 100%; /* Set maximum height to 100% of the header height */
+                width: auto; /* Allow the width to adjust automatically */
+            }
+
+        div {
+            height: 100%;
+        }
+
+        nav {
+            background-color: #f8f8f8; /* Light gray background for the navigation */
+            padding: 2vh 0px 10px;
+            text-align: right;
+        }
+
+            nav a {
+                text-decoration: none;
+                color: #333;
+                padding: 1vh 5px;
+                transition: background-color 0.3s;
+            }
+
+                nav a:hover {
+                    background-color: #ddd; /* Slightly darker gray background on hover */
+                }
+
+        .contact-info {
+            display: flex;
+            align-items: end;
+        }
+
+        main {
+            min-height: 1000px;
+            text-align: center;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            main div {
+                height: 100vh;
+                width: 100vh;
+            }
+
+        .schedule {
+            width: 100%;
+            height: 60vh;
+            background: url('Background1.jpg') top center/cover no-repeat fixed;
+            padding: 5vh 20%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1; /* Ensure text is on top of the background */
+        }
+
+            .schedule h2 {
+                
+            }
+
+        .convince {
+            width: 100%;
+            height: 60vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info {
+            width: 100%;
+            height: 50vh;
+            background: url('Background2.jpg') center center/cover no-repeat;
+            padding: 5vh 20%;
+            color: #333; /* Set text color to dark grey */
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1; /* Ensure text is on top of the background */
+        }
+
+            .info h2 {
+                padding: 5vh 15%;
+            }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+            footer a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="HQA Logo.png" alt="Your Logo">
+        <div class="contact-info" style="display:flex; flex-direction: column">
+            <div class="phone-number">Give us a call: 123.456.7890</div>
+            <!-- Add more contact information if needed -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="schedule">
+            <h2>Welcome to HQ-Associates!</h2>
+        </div>
+        <div class="convince">
+            <h2>We can add more information here.</h2>
+        </div>
+        <div class="info">
+            <h2>Here is what we can do.</h2>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Your Company. All rights reserved.
+    </footer>
+
+</body>
+</html>
